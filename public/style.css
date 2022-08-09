@@ -1,0 +1,63 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+.loadapp {
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+	background-color: #0C222F;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif !important;
+    margin: 0;
+    padding: 0;
+    position: relative;
+}
+
+.load-app-child {
+    width: 10em;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-image: linear-gradient(to right top, #9a9999, #0639ff);
+    height: 10em;
+    border-radius: 50%;
+}
+
+.load-app-child-name {
+    display: flex;
+    height: 9.35em;
+    width: 9.35em;
+    align-items: center;
+    justify-content: center;
+    background-color: #0c222f;
+    border-radius: 50%;
+    color: gold;
+    z-index: 1;
+}
+
+.bg-gradient {
+    position: absolute;
+    width: 10em;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-image: linear-gradient(to right top, #f5f100, #0639ff);
+    height: 10em;
+    border-radius: 50%;
+    animation: 1s spinapp linear infinite;
+}
+
+.load-app-child-name h1:last-child {
+    color: white;
+}
+
+@keyframes spinapp {
+    0% {
+        transform: rotate(0deg);
+    }
+    100% {
+        transform: rotate(360deg);
+    }
+}
